@@ -1,0 +1,25 @@
+.page {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 32px;
+}
+
+.chooseImageLabel {
+    display: flex;
+    padding: 12px 16px;
+    background: black;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.chooseImageInput {
+    display: none;
+}
