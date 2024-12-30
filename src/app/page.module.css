@@ -9,17 +9,113 @@
 
 .title {
     font-size: 32px;
+    font-weight: bold;
 }
 
 .chooseImageLabel {
     display: flex;
-    padding: 12px 16px;
-    background: black;
-    color: white;
+    width: 384px;
+    min-height: 128px;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 1px solid #dbdde1;
     border-radius: 8px;
     cursor: pointer;
+    overflow: hidden;
+}
+
+.chooseImage {
+    display: flex;
+    width: 384px;
+}
+
+.chooseImageDismissButton {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    font-weight: bold;
+    color: #515254;
+    width: 32px;
+    height: 32px;
+    background: #f4f5f9;
+    cursor: pointer;
+    opacity: 0.5;
+    top: 8px;
+    right: 8px;
+    border: none;
 }
 
 .chooseImageInput {
     display: none;
+}
+
+.button {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    background: #f4f5f9;
+    border-radius: 8px;
+    margin-top: 32px;
+    border: none;
+    padding: 12px 48px;
+    
+    &:enabled {
+        cursor: pointer;
+        &:hover {
+            background: #e3e4e7;
+        }
+        
+        &:active {
+            scale: 0.98;
+        }
+    }
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.4;
+    }
+    
+    transition: background 0.2s ease-in-out, scale 0.2s ease-in-out;
+}
+
+.aiResponseDescription {
+    display: flex;
+    font-size: 16px;
+    color: #515254;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.aiResponseSkillContainer {
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+    align-items: center;
+    margin-top: 32px;
+    padding: 0 16px;
+    overflow-y: scroll;
+    gap: 4px;
+    
+    -ms-overflow-style: none;/* for Internet Explorer, Edge */
+    scrollbar-width: none;/* for Firefox */
+
+    &::-webkit-scrollbar {
+        display: none;/* for Chrome, Safari, and Opera */
+    }
+}
+
+.aiResponseSkill {
+    display: flex;
+    padding: 8px;
+    max-width: 360px;
+    text-align: center;
+    font-size: 18px;
+    word-break: keep-all;
+    /*background: #f4f5f9;*/
+    border: 1px solid #f4f5f9;
+    box-shadow: 0 3px 4px 1px rgba(27, 27, 52, 0.02);
+    color: #515254;
+    border-radius: 8px;
 }
