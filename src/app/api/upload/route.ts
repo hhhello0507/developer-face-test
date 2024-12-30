@@ -6,7 +6,7 @@ import {Buffer} from "node:buffer";
 export async function POST(request: NextRequest) {
     const formData = await request.formData();
     const file = formData.get('file') as File;
-    const fileType = formData.get('fileType');
+    const fileType = formData.get('fileType') as string;
 
     if (!file || !fileType) return NextResponse.json({error: 'No file uploaded'}, {status: 400});
 

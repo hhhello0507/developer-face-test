@@ -23,6 +23,7 @@
     border-radius: 8px;
     cursor: pointer;
     overflow: hidden;
+    margin-top: 16px;
 }
 
 .chooseImage {
@@ -80,7 +81,7 @@
     transition: background 0.2s ease-in-out, scale 0.2s ease-in-out;
 }
 
-.aiResponseDescription {
+.titleDescription {
     display: flex;
     font-size: 16px;
     color: #515254;
