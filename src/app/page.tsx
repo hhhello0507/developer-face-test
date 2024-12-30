@@ -74,7 +74,7 @@ export default function Home() {
             ) : (
                 <>
                     <span className={S.title}>개발자 관상 테스트</span>
-                    <span className={S.titleDescription}>🤔 얼굴을 넣고 어떤 개발자 같이 생겼는지 알아보세요 😰</span>
+                    <span className={S.titleDescription}>🤔 자신의 얼굴이 어떤 개발자 같이 생겼는지 알아보세요 😰</span>
                     <label className={S.chooseImageLabel} htmlFor="choose-image">
                         {result?.image === undefined || result.image === null
                             ? <>이미지 선택</>
